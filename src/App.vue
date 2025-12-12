@@ -1,9 +1,12 @@
 <script setup>
 import { ref } from 'vue';
-import RouterTabsVue from './components/RouterTabs.vue';
+import RouterTabs from './components/RouterTabs.vue';
+
 
 </script>
 <template>
-    <RouterTabsVue></RouterTabsVue>
+   <RouterTabs></RouterTabs>
+   <Suspense>
     <RouterView></RouterView>
+   </Suspense>
 </template>
